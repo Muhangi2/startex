@@ -1,0 +1,28 @@
+/* Hero.css */
+.blur-corners {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .blur-corners::before,
+  .blur-corners::after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background: inherit;
+    filter: blur(15px); /* Adjust the blur intensity as needed */
+  }
+  
+  .blur-corners::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .blur-corners::after {
+    bottom: 0;
+    right: 0;
+  }
+  
